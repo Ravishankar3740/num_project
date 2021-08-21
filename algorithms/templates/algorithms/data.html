@@ -1,0 +1,28 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset style="width:600px">
+        <legend><b>Your Data Result:</b></legend>
+        <b>Name: {{data.name}}</b> <br> 
+          
+        <b>Gender: {{data.gender}}</b> <br>
+        <b>Age: {{data.birth_date}}</b> <br>
+        <hr>
+        <br>
+        <table border="1">
+            <tr><td><b>Total Of BirthDate :</b></td><td><b>000{{data.total}}</b></td></tr>
+            <tr><td><b>Driver:</b></td><td><b>000{{data.driver}}</b></td></tr>
+            <tr><td><b>Conductor:</b></td><td><b>000{{data.cund}}</b></td></tr>
+            <tr><td><b>Kuber:</b></td><td><b>000{{data.kuber}}</b></td></tr>             
+        </table><br/>
+        <button><a href = "{% url 'home' %}" >Calculate Again</a><br/></button>
+</body>
+</html>

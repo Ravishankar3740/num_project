@@ -12,16 +12,19 @@
     <fieldset style="width:600px">
         <legend><b>Your Data Result:</b></legend>
         <b>Name: {{data.name}}</b> <br> 
-          
         <b>Gender: {{data.gender}}</b> <br>
         <b>Age: {{data.birth_date}}</b> <br>
         <hr>
         <br>
         <table border="1">
-            <tr><td><b>Total Of BirthDate :</b></td><td><b>000{{data.total}}</b></td></tr>
+            <!-- <tr><td><b>Total Of BirthDate :</b></td><td><b>000{{data.total}}</b></td></tr> -->
             <tr><td><b>Driver:</b></td><td><b>000{{data.driver}}</b></td></tr>
             <tr><td><b>Conductor:</b></td><td><b>000{{data.cund}}</b></td></tr>
-            <tr><td><b>Kuber:</b></td><td><b>000{{data.kuber}}</b></td></tr>             
+            <tr><td><b>Kua:</b></td><td><b>000{{data.kuber}}</b></td></tr>             
+            <tr><td><b>{{data.num1}}</b></td><td><b>000{{data.mob1}}</b></td></tr>             
+            <tr><td><b>{{data.num2}}</b></td><td><b>000{{data.mob2}}</b></td></tr>             
+            <tr><td><b>Total Mobile-1</b></td><td><b>0{{data.two_mob1}}</b></td></tr>             
+            <tr><td><b>Total Mobile-2</b></td><td><b>0{{data.two_mob2}}</b></td></tr>             
         </table><br/>
         <button><a href = "{% url 'home' %}" >Calculate Again</a><br/></button>
 </body>
